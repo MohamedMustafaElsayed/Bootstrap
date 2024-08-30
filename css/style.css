@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #c4f9ffb0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden !important;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    color: #b9b9b9;
+    text-shadow: 0 0 5px rgb(140, 142, 143);
+}
+.eff-1 {
+    position: relative;
+}
+.eff-1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: #2448cc54;
+    opacity: 0.5;
+}
+.eff-1:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+.eff-1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: #2448cc54;
+    opacity: 0.5;
+}
+.eff-1:hover::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+/* //////////////////////////// */
+.nav-link {
+    transition: 0.5s;
+}
+.nav-link:hover {
+    text-shadow: 0 0 5px rgb(140, 142, 143);
+}
+.form-control:focus {
+    border: none !important;
+    box-shadow: 0 0 5px 2px rgb(159, 161, 161);
+}
+/*////////////////////////Aside///////////////////*/
+.aside-icon {
+    width: 80px;
+    height: 80px;
+}
+.aside-icon a i {
+    text-align: center;
+    font-size: 60px;
+    line-height: 80px;
+    color: #033e4d;
+}
+.aside-icon:hover {
+    text-shadow: 0 0 10px #fff;
+}
+/* /////////////////////////////////////////// */
+.card-header,
+.card,
+.tran {
+    border-radius: 0 !important;
+}
+/* img */
+.fixed-img {
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+}
+/* ////////////////////////////// */
+.card-my1 {
+    border-radius: 15px !important;
+}
+.card-my2 {
+    height: 400px;
+    background-size: cover;
+    object-fit: cover;
+}
+.fixed-image1 {
+    background-image: url(../images/pexels-valeriya-827518.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.fixed-image2 {
+    background-image: url(../images/pexels-whynugrohou-3097112.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/*thank*/
+.thanks {
+    margin-top: 30px;
+}
+.thankcard {
+    border: none;
+    transition: all 150ms;
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 450px;
+    box-shadow: 0 0 12px 0 rgba(165, 127, 127, 0.2);
+}
+.card.card-bg {
+    transition: all 150ms;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.card.card-bg:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+}
+.card.card-bg:hover {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    background-size: 130%;
+    transition: all 150ms;
+}
+.card.card-bg:hover .card-img-overlay {
+    background: linear-gradient(0deg, rgba(12, 10, 14, 0.685) 0%, #010b138c 100%);
+}
+.card .card-footer {
+    background: none;
+    border-top: none;
+}
+.card .card-footer .media img {
+    border: solid 3px rgba(255, 255, 255, 0.3);
+}
+.card .card-body {
+    transition: all 150ms;
+}
+.card-hover:hover {
+    cursor: pointer;
+    transition: all 150ms;
+}
+.card-hover:hover .card-body {
+    margin-top: 30px;
+    transition: all 150ms;
+}
+.card-hover .card-img-overlay {
+    transition: all 800ms;
+    background: linear-gradient(0deg, rgba(5, 12, 15, 0.379) 0%, #31233a 100%);
+}
+/* //////////////////////////////// */
+.card-custom {
+    border-radius: 30px !important;
+}
+.card-img-custom {
+    background-image: url(../images/pexels-sammsara-luxury-modern-home-372468-1099816.jpg);
+    width: 50%;
+    height: 400px;
+    background-size: cover;
+    clip-path: polygon(38% 0, 100% 0%, 100% 100%, 60% 100%);
+    transition: 0.5s;
+    border-radius: 30px;
+}
+.card-custom:hover .card-img-custom {
+    background-position: center;
+}
+.card-body-custom {
+    flex: 1;
+}
+.card-title::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(84, 92, 94);
+    transition: 0.5s;
+}
+.card-custom:hover .card-title::after {
+    width: 100%;
+    height: 5px;
+}
+/* //////////////////////////// */
+.Media {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px 5px;
+}
+.Media-title {
+    text-transform: uppercase;
+}
+.Media i {
+    font-size: 90px;
+    display: block;
+    margin: 10px auto;
+    color: #1968dfda;
+    cursor: pointer;
+}
+.Media a {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.footer-item {
+    width: 30% !important;
+    height: 100%;
+    line-height: 40px;
+    margin-top: 50px;
+}
+.footer-item-cards img {
+    display: block;
+    margin-top: 20px;
+    margin: 10px 0 20px 70px;
+    cursor: pointer;
+    width: 50px;
+}
+
+@media (max-width: 1200px) {
+    .nav-link {
+        font-size: 15px !important;
+        padding: 9px !important;
+    }
+    .aside-icon {
+        width: 30px;
+        height: 60px;
+    }
+    .aside-icon a i {
+        text-align: center;
+        font-size: 55px;
+        line-height: 55px;
+        color: #1e5f79b2;
+    }
+    .aside-icon:hover {
+        text-shadow: 0 0 5px #fff;
+    }
+         .card-my1 {
+             width: 350px !important;
+         }
+         .card-my1 img {
+             height: 350px;
+         }
+         .card-my1 .card-text{
+            font-size: 13px !important;
+         }
+    .card-custom {
+        flex-direction: column !important;
+        text-align: center !important;
+        width: 60% !important;
+        margin: 50px auto !important;
+        border-radius: 20px !important;
+    }
+    .card-img-custom {
+        width: 100% !important;
+        height: 350px !important;
+        clip-path: none !important;
+        border-radius: 20px;
+    }
+    .card-title {
+        width: 100% !important;
+        font-size: 25px !important;
+        margin: 5px !important;
+    }
+    .card-body-custom {
+        padding: 15px !important;
+    }
+    .card-text {
+        font-size: 10px !important;
+        padding: 5px !important;
+    }
+    .card-custom:hover .card-title::after {
+        width: 0;
+        height: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .aside-icon {
+        width: 60px;
+        height: 60px;
+    }
+    .aside-icon a i {
+        text-align: center;
+        font-size: 50px;
+        line-height: 50px;
+        color: #2cc5bdb2;
+    }
+    .aside-icon:hover {
+        text-shadow: 0 0 5px #fff;
+    }
+        .card-my1 {
+            width: 350px !important;
+        }
+        .card-my1 img {
+            height: 350px;
+        }
+    .card-custom {
+        flex-direction: column !important;
+        text-align: center !important;
+        width: 70% !important;
+        margin: 50px auto !important;
+        border-radius: 20px !important;
+    }
+    .card-custom .card-text{
+        font-size: 13px !important;
+    }
+    .card-img-custom {
+        width: 100% !important;
+        height: 370px !important;
+        clip-path: none !important;
+        border-radius: 20px;
+    }
+        .thankcard .card-title {
+            font-size: 26px !important;
+        }
+    .card-title {
+        width: 100% !important;
+        font-size: 25px !important;
+        margin: 5px !important;
+    }
+    .card-body-custom {
+        padding: 5px !important;
+    }
+    .card-text {
+        font-size: 10px !important;
+        padding: 5px !important;
+    }
+    .card-custom:hover .card-title::after {
+        width: 0;
+        height: 0;
+    }
+    .Media {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel.slide {
+        height: 370px !important;
+    }
+    .carousel-item img {
+        height: 370px !important;
+    }
+    .aside-icon {
+        width: 35px;
+        height: 60px;
+    }
+    .aside-icon a i {
+        text-align: center;
+        font-size: 50px;
+        line-height: 50px;
+        color: #a42ed393;
+    }
+    .aside-icon:hover {
+        text-shadow: 0 0 5px #fff;
+    }
+        .thankcard {
+            min-height: 430px;
+            min-width: 350px;
+        }
+        .thankcard .card-title {
+            font-size: 22px !important;
+        }
+                .rounded-circle {
+                    width: 80px !important;
+                }
+    .card-my1 {
+        width: 350px !important;
+    }
+        .card-my1 img{
+            height: 350px;
+        }
+    /* /////////////////////////////////////// */
+    .card-custom {
+        flex-direction: column !important;
+        text-align: center !important;
+        width: 400px !important;
+        margin: 50px auto !important;
+        border-radius: 20px !important;
+    }
+    .card-img-custom {
+        width: 100% !important;
+        height: 350px !important;
+        clip-path: none !important;
+        background-position: center !important;
+        border-radius: 20px;
+    }
+    .card-title {
+        width: 100% !important;
+        font-size: 25px !important;
+        margin: 5px !important;
+    }
+    .card-body-custom {
+        padding: 5px !important;
+    }
+    .card-text {
+        font-size: 10px !important;
+        padding: 5px !important;
+    }
+    .card-custom:hover .card-title::after {
+        width: 0;
+        height: 0;
+    }
+    .footer-item {
+        line-height: 25px;
+        margin-top: 30px;
+    }
+    .footer-item h3 {
+        font-size: 22px;
+    }
+    .Media {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    header{
+        width: 100%;
+    }
+    header nav {
+        width: 100%;
+    }
+    .carousel.slide {
+        height: 370px !important;
+    }
+    .carousel-item img {
+        height: 370px !important;
+    }
+    .aside-icon {
+        width: 40px;
+        height: 60px;
+    }
+    .aside-icon a i {
+        text-align: center;
+        font-size: 50px;
+        line-height: 50px;
+        color: #1855c59a;
+    }
+    .aside-icon:hover {
+        text-shadow: 0 0 5px #fff;
+    }
+    .thankcard {
+        min-height: 370px;
+        min-width: 250px;
+        max-width: 350px;
+        margin: auto;
+    }
+    .thankcard .card-title{
+        font-size: 16px !important;
+    }
+    .rounded-circle{
+        width: 70px !important;
+    }
+    .card-my1 {
+        width: 350px !important;
+        margin: auto;
+    }
+        .card-my1 img{
+            height: 350px;
+        }
+        .card-my1 p{
+            font-size: 12px !important;
+        }
+    /* /////////// */
+    .card-custom {
+        flex-direction: column !important;
+        text-align: center !important;
+        max-width: 300px !important;
+        max-height: 500px;
+        margin: 50px auto !important;
+        border-radius: 20px !important;
+    }
+    .card-custom button{
+        height: 50px !important;
+        padding: 0 !important;
+    }
+    .card-text-art{
+        font-size: 13px !important;
+    }
+    .card-img-custom {
+        width: 100% !important;
+        height: 300px !important;
+        clip-path: none !important;
+        background-position: center !important;
+        border-radius: 20px;
+    }
+    .card-title {
+        width: 100% !important;
+        font-size: 25px !important;
+        margin: 5px !important;
+    }
+    .card-body-custom {
+        padding: 5px !important;
+    }
+    .card-text {
+        font-size: 10px !important;
+        padding: 5px !important;
+    }
+    .card-custom:hover .card-title::after {
+        width: 0;
+        height: 0;
+    }
+    .Media {
+        margin: 20px 10px;
+    }
+    footer ul li{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .footer-item-cards{
+        margin-right:10px ;
+    }
+}
